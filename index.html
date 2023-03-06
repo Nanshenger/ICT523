@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anders | ICT523 | Index </title>
+    <meta name="keywords" content="Anders ICT523">
+    <meta name="theme-color" content="#000">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaygb/Apage@master/pws20200708/style.css">
+    <style>
+            h1::before{
+                content: 'Personal introduction';
+                position: absolute;
+                color: #b2bec348;
+                z-index: -1;
+                left: 10px;
+                top: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="zz">
+        <img class="lazy-img" data-original="https://i.loli.net/2020/09/14/v4Si8BIupOVcwm6.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICRAEAOw==" alt="" srcset="">
+    </div>
+
+    <div class="main">
+        
+        <div class="title">
+            <h1>Personal introduction</h1>
+        </div>
+        <div class="content">
+            <p>Here is Anders from IT2</p>
+            <p>I am from Zhejiang, China. Anders is my English name.</p>
+            <p>I like this school and this course very much. I am very interested in IT. </p>
+            <p>I hope my IT teacher can live to teach us until he is 100 years old.</p>
+            <img border="0" src="asset/p1.jpg" alt="Pulpit rock" width="200" height="200">
+            <img border="0" src="asset/p2.jpg" alt="Pulpit rock" width="200" height="200">
+            <p><a href="diagram.html" target="_blank">Click here - diagram</a>&nbsp; Or  <a href="surveyResults.html" target="_blank">Click here - Survey results</a>.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script>
+        // lazyload
+    window.onload = function() {
+        $('.zz img').addClass('lazyload');
+        $(function() {
+            $("img.lazyload").lazyload({
+                effect: 'fadeIn',
+                // inverval: 3000
+                effectspeed: 1000
+            });
+        });
+
+        $(".zz img").lazyload({
+            effect: 'fadeIn',
+            // inverval: 3000
+            effectspeed: 1000 
+        });
+    }
+    console.log(" %c bppws %c https://github.com/kaygb/Apage/ ", "color: #000; background: pink; padding:5px;", "background: #fff; padding:5px;");
+//初始化
+    </script>
+</body>
+</html>
